@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header lock-padding">
+        <div class="header__conteiner">
+            <div class="header__body">
+        <div class="header__logo">
+            <a href="#"><img src="image/лого.svg" alt="logo"></a>
+        </div>
+        <div class="header__burger">
+            <span> </span>
+        </div>
+        <div class="header__top-menu">
+            <ul>
+                <li id="li1"><a href="#">Главная</a></li>
+                <li id="li2"><a href="#">Проекты</a></li>
+                <li id="li3"><a href="#">Услуги</a></li>
+                <li id="li4"><a href="#">О компании</a></li>
+                <li id="li5"><a href="#">Готовые решения</a></li>
+                <li id="li6"><a href="#">Контакты</a></li>
+            </ul>
+            <a class="header__mobile-btn" href="">Заполнить бриф</a>
+            <div class="header__mobile-mail">
+                <span>Напишите нам</span>
+                <div class="mail">
+                <img src="image/mail_icon.svg" alt="mail">
+         <a href="mailto:info@sld-store.ru">info@sld-store.ru</a>
+        </div>
+            </div>
+        </div>
+        <div class="header__mail">
+         <img src="image/mail_icon.svg" alt="mail">
+         <a href="mailto:info@sld-store.ru">info@sld-store.ru</a>
+        </div>
+        <div class="header__phone">
+            <img src="image/phone_icon.svg" alt="phone">
+            <div class="header__text">
+            <p><a class="popup-link" href="#popup1">Обратный звонок</a></p>
+            <a class="popup-link" href="#popup1">8 812 615-62-79</a>
+        </div>
+        </div>
+</div>
+        </div>
+    </header>
+<div class="content">
+    <div class="content__contact-form">
+        <p class="text">Оснащение конференц-залов</p>
+        <h2>Видео конференции</h2>
+        <p class="descr">Профессиональное оборудование для конференц-залов предназначено для проведения и организации презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента.</p>
+        <div class="button">
+        <a class="call popup-link" href="#popup1">Обратный звонок</a>
+        <a href="#" class="brief">Заполнить бриф</a>
+    </div>
+    </div>
+    <div class="popup" id="popup1">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__close close-popup">
+                <a href="##" ><img src="image/close_icon.svg" alt="close_icon"></a>
+            </div>
+                <h2>Готовы обсудить проект?</h2>
+                <p>Заполните форму ниже и мы свяжемся с вами.</p>
+                <form action="#" method="POST">
+                    <input class="name" type="text" name="user_name" placeholder="Имя*">
+                    <input class="tel" type="tel" name="user_phone" placeholder="Телефон*">
+                    <label class="label">
+                        <input type="checkbox" class="checkbox">
+                        <span class="fake"></span>
+                        <span class="text">Я согласен с условиями обработки <a href="#">персональных данных</a></span>
+                    </label>
+                    <div class="btn">
+                    <a class="popup-link" href="#popup2">Отправить</a>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup2">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__close close-popup">
+                <a href="##" class="close-popup"><img src="image/close_icon.svg" alt="close_icon"></a>
+            </div>
+            <div class="popup__inner">
+                <div class="timer">
+                    <div class="timer__line">
+                        <div class="timer__body">
+                            <img class="timer__check" src="image/timer-check.svg" alt="check">
+                        </div>
+                    </div>
+            </div>
+            <p>Ваша заявка успешно отправлена.<br>Ожидайте звонка в ближайшее время!</p>
+            <div class="btn">
+                <a class="btn close-popup" href="#popup2">Ok</a>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+
+    <div class="content__slider">
+        <div class="slider__item">
+            <h2>01</h2>
+            <p>Простота использования оснащения позволяет решать функциональные и организационные задачи, оптимизировать работу, проводить мероприятия различного масштаба.</p>
+        </div>
+        <div class="slider__item">
+            <h2>02</h2>
+            <p>Применение инновационных решений для демонстрации культурных и исторических реликвий – актуальная тенденция, которая успешно применяется в музеях и на площадках альтернативного искусства. </p>
+        </div>
+        <div class="slider__item">
+            <h2>03</h2>
+            <p>Простота использования оснащения позволяет решать функциональные и организационные задачи, оптимизировать работу, проводить мероприятия различного масштаба.</p>
+        </div>
+        <div class="slider__item">
+            <h2>04</h2>
+            <p>Применение инновационных решений для демонстрации культурных и исторических реликвий – актуальная тенденция, которая успешно применяется в музеях и на площадках альтернативного искусства. </p>
+        </div>
+    </div>
+</div>
+
+<div class="conteiner conteiner-gallery">
+    <div class="gallery">
+    <div class="gallery__row">
+        <div class="gallery__row-img1"></div>
+        <div class="gallery__row-img2"></div>
+</div>
+<div class="gallery__electro-voice">
+    <img src="image/Electro_Voice1.svg" alt="" class="electro-voice__left">
+    <img src="image/Electro_Voice2.svg" alt="" class="electro-voice__right">
+</div>
+<div class="gallery__touch">
+    <a href="#popup3" class="popup-link touch__img-left"><img src="image/touch1.svg" alt=""></a>
+    <img src="image/touch2.svg" alt="" class="touch__img-right">
+</div>
+<div class="popup gallery__popup" id="popup3">
+    <div class="gallery__popup-body">
+        <div class="gallery__popup-content">
+            <div class="gallery__popup-close close-popup">
+            <a href="##" class="close-popup"><img src="image/close_icon.svg" alt="close_icon"></a>
+        </div>
+        <div class="gallery__popup-wrap">
+            <h2>Electro-Voice<br>
+            EVID 4.2</h2>
+        <div class="icon">
+            <img src="image/gallery-icon.svg" alt="">
+        </div>
+        <div class="list">
+            <ul>
+                <li>Очень мягкое звучание.</li>
+                <li>Чувствительность — 89 дБ.</li>
+                <li>Пиковая мощность — 400 Вт.</li>
+                <li>Степень влагозащищенности IP34.</li>
+            </ul>
+        </div>
+                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
