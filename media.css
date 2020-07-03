@@ -356,7 +356,7 @@ border-radius: 7px;
         display: none;
     }
 }
-@media (max-width: 375px){
+@media (max-width: 374px){
     .content__contact-form p.descr{
         margin-bottom: 20px;
     }
