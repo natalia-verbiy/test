@@ -2,11 +2,8 @@
 const popupLinks=document.querySelectorAll('.popup-link');
 const body=document.querySelector('body');
 const lockPadding=document.querySelectorAll(".lock-padding");
-
 let unlock=true;
-
 const timeout=800;
-
 if (popupLinks.length>0){
     for (let index = 0; index < popupLinks.length; index++){
         const popupLink=popupLinks[index];
@@ -44,7 +41,6 @@ function popupOpen(currentPopup) {
         });
     }
 }
-
 function popupClose(popupActive, doUnlock = true) {
     if (unlock) {
         popupActive.classList.remove('open');
@@ -53,10 +49,8 @@ function popupClose(popupActive, doUnlock = true) {
         }
     }
 }
-
 function bodyLock(){
     const lockPaddingValue = window.innerWidth - document.querySelector ('.wrapper').offsetWidth + 'px';
-
     for (let index = 0; index < lockPadding.length; index++) {
         const el = lockPadding[index];
         el.style.paddingRight = lockPaddingValue;
@@ -69,7 +63,6 @@ function bodyLock(){
         unlock = true;
     }, timeout);
 }
-
 function bodyUnLock() {
     setTimeout(function(){
         if (lockPadding.length>0) {
@@ -87,14 +80,12 @@ function bodyUnLock() {
         unlock = true;
     }, timeout);
 }
-
 document.addEventListener('keydown', function(e){
     if (e.which === 27) {
         const popupActive = document.querySelector('.popup.open');
         popupClose(popupActive);
     }
 });
-
 (function() {
     //проверяем поддержку
     if (!Element.prototype.closest) {
@@ -119,18 +110,14 @@ document.addEventListener('keydown', function(e){
         Element.prototype.msMatchesSelector;
     }
 }) ();
-
 //gallery__popup coordinates
 let popup = $('.gallery__popup');
-
 $('.touch__img-left').click(function(e) {
     let coordinates = $(this).offset(); //Получаем координаты кликнутой кнопки
     coordinates.top += $(this).height() - 280; 
     coordinates.left += $(this).width() - 258; 
     popup.offset(coordinates); //Устанавливаем координаты попапу
-
 });
-
 //slick slider
 $(document).ready(function(){
 $('.content__slider').slick({
@@ -139,12 +126,9 @@ $('.content__slider').slick({
     variableWidth:true,
 });
 });
-
 //menu burger
 $(document).ready(function(){
     $('.header__burger').click(function(event){
         $('.header__burger,.header__top-menu').toggleClass('active');
-
     });
 });
-
