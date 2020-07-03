@@ -631,7 +631,7 @@ body.lock {
   vertical-align: middle;
 }
 .gallery__popup-wrap .list ul li:last-child {
-  padding-bottom: none;
+  padding-bottom: 0;
 }
 .gallery__popup-wrap .icon img {
   position: absolute;
