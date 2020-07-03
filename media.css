@@ -1,4 +1,4 @@
-@media (max-width: 720px){
+@media (max-width: 720px & min-width:374px){
     .wrapper{
         position: relative;
         width: 100%;
@@ -359,6 +359,9 @@ border-radius: 7px;
 @media (max-width: 373px){
     .content__contact-form p.descr{
         margin-bottom: 20px;
+    }
+    .button{
+        width:100%;
     }
     .button a{
         width: 100%;
