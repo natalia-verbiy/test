@@ -132,3 +132,10 @@ $(document).ready(function(){
         $('.header__burger,.header__top-menu').toggleClass('active');
     });
 });
+
+//mask
+<script>
+    $(document).ready(function() {
+   $("#phone").mask("+7 (999) 999-99-99"); 
+});
+    </script>
